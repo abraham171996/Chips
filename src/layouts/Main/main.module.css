@@ -63,6 +63,11 @@ body{
     background-color: #ffffff;
     font-size: 24px;
     cursor: pointer;
+    transition: .5s;
+}
+.countBtn button:hover{
+    background-color: #000000;
+    color: #fff;
 }
 .countNum{
     display: flex;
@@ -86,6 +91,10 @@ body{
     padding: 0 10px;
     gap: 25px;
     cursor: pointer;
+    transition: .5s;
+}
+.addBtn:hover{
+    transform: scale(1.05);
 }
 .addBtn span{
     color: #fff;

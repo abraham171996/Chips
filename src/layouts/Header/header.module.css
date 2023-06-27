@@ -30,6 +30,12 @@ header{
     width: 100px;
     height: 50px;
     border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.shop:hover {
+    transform: scale(1.09);
+ 
     
 }
 .shopBag{

@@ -67,6 +67,12 @@ footer{
     background-color: #FFC936;
     border-radius: 20px;
     cursor: pointer;
+    transition: .5s;
+}
+.content button:hover{
+    transform: scale(1.09);
+    background-color: #206456;
+   color: #fff;
 }
 .review{
     display: flex;
