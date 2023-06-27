@@ -1,0 +1,137 @@
+body{
+    background-color: #F7EFED;
+    padding:  0 50px;
+}
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 20px;
+}
+.cardLeftTop{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.cardLeftTop h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 50%;
+    line-height: 64px;
+    position: relative;
+   
+}
+.cardLeft p {
+    font-size: 24px;
+    color: #878483;
+    width: 53%;
+    text-align: justify;
+}
+.cardLeftTop img{
+    width: 175px;
+    height: 117px;
+    object-fit: cover;
+    left: 18%;
+    position: absolute;
+    
+
+}
+
+.addCart{
+    width: 53%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.countBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.countBtn button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.countNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 24px;
+}
+.addBtn{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 0 10px;
+    gap: 25px;
+    cursor: pointer;
+}
+.addBtn span{
+    color: #fff;
+}
+.icn{
+    width: 40px;
+    height: 40px;
+    background-color: #FFC936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.cardRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nachos{
+    width: 475px;
+    height: 615px;
+}
+.ingredientsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #206456;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h4{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

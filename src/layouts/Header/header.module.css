@@ -1,0 +1,41 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 40px;
+}
+.logo{
+   
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+}
+.shop{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+.shopBag{
+    
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    
+}

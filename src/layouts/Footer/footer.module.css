@@ -1,0 +1,85 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg{
+    background-image: url(../../assets/image/footer/Bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+.bgCards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bgCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    background-color: #fff;
+    width: 230px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    border-radius: 20px;
+}
+.info img{
+    width: 120px;
+    height: 165px;
+    object-fit: cover;
+    position: absolute;
+    left: -20px;
+    top: -25px;
+}
+.content{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content h3{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.content button{
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFC936;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.review{
+    display: flex;
+    
+    align-items: center;
+    gap: 7px;
+}
+.review svg{
+  color: #FFC936;
+  font-size: 8px;
+}
+.review span{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
