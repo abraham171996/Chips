@@ -13,3 +13,5 @@ The repository includes the following files:
 - CSS files: Stylesheets for each component.
 - Asset files: Images used in the application.
 - package.json: Contains dependencies and scripts for running the application.
+
+feat:add backet locig and used lift up state and props
