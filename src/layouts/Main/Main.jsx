@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import pepper1 from '../../assets/image/main/3-2-pepper-picture 1.png'
 import styles from "./main.module.css"
 import nachos from '../../assets/image/main/Group 24.png'
@@ -25,20 +25,8 @@ const ingredient = [
     }
 ]
 
-const Main = () => {
-   const [count ,setCount] = useState(0);
-
+const Main = ({count,onPlus,onMinus,onAddCart}) => {
    
-    
-   function handlePlus(){
-        setCount(count+1)
-   }
-   function handleMinus(){
-     if(count>0){
-        setCount(count-1)
-     }
-     
-   }
    
     return (
         <main>
@@ -52,16 +40,16 @@ const Main = () => {
                         It will Rock your taste buds with Chilli & Lime.
                     </p>
                     <div className={styles.addCart}>
-                        <button className={styles.addBtn}>
+                        <button className={styles.addBtn} onClick={onAddCart}>
                             <div className={styles.icn}>
                                 <FontAwesomeIcon icon={faShoppingCart} />
                             </div>
                             <span>Add TO Cart</span>
                         </button>
                         <div className={styles.countBtn}>
-                            <button onClick={handlePlus}>+</button>
+                            <button onClick={onPlus}>+</button>
                             <span className={styles.countNum}>{count}</span>
-                            <button onClick={handleMinus}>-</button>
+                            <button onClick={onMinus}>-</button>
                         </div>
                     </div>
                 </div>
