@@ -17,3 +17,5 @@ The repository includes the following files:
 feat:add backet locig and used lift up state and props
 
 feat:add new components name is footeritem
+
+feat:add new state and function for products show dynamically
