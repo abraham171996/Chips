@@ -15,3 +15,5 @@ The repository includes the following files:
 - package.json: Contains dependencies and scripts for running the application.
 
 feat:add backet locig and used lift up state and props
+
+feat:add new components name is footeritem
