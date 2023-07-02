@@ -1,11 +1,11 @@
-import React from 'react'
+
+import FooterItem from '../../components/FooterItem'
 import styles from './footer.module.css'
 import crunchex from '../../assets/image/footer/crunchex.png'
 import tomatoTwist from '../../assets/image/footer/tomatoTwist.png'
 import chaatChaska from '../../assets/image/footer/chaatChaska.png'
 import nachos from "../../assets/image/footer/imageedit_1_4016932298.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar} from '@fortawesome/free-solid-svg-icons'
+
 let chipsObj = [
     {   
         id:crypto.randomUUID(),
@@ -41,16 +41,15 @@ const Footer = () => {
       <footer>
           <div className={styles.bg}>
              <ul className={styles.bgCards} >
-              {
-                  chipsObj.map((el)=>(
-                      <FooterItem 
-                      name = {el.name}
-                      image = {el.image}
-                      key={el.id}
-                      price= {el.price}
-                      />
-                  ))
-              }
+             {chipsObj.map((el) => (
+            <FooterItem 
+             name={el.name}
+                image={el.image}
+                key={el.id}
+                 price={el.price}
+           
+          />
+        ))}
               </ul> 
           </div>
       </footer>
@@ -58,36 +57,51 @@ const Footer = () => {
   }
   
   
-  function FooterItem({name,image,price}){
-    const starCount = 5; 
-    const renderStars = () => {
-      const stars = [];
-      for (let i = 0; i < starCount; i++) {
-        stars.push(<FontAwesomeIcon icon={faStar} key={i} />);
-      }
-      return stars;
-    };
-      return(
-          <div>
-            <li className={styles.bgCard}>
-             <div className={styles.info}>
-                    <figure>
-                        <img src={image} alt="" />
-                    </figure>
-                       <div className={styles.content}>
-                       <h3>{name}</h3>
-                        <div className={styles.review}>
+//   function FooterItem({name,image,price}){
+//     const [product,setProduct] = useState(null)
+    
+//     function productHandel (){
+        
+//         setProduct(()=>{
+//             return(
+//                 <>
+//                 {chipsObj.forEach(e=>console.log(e))}
+//                 </>
+//             )
+//         })
+        
+//     }
+//     const starCount = 5; 
+//     const renderStars = () => {
+//       const stars = [];
+//       for (let i = 0; i < starCount; i++) {
+//         stars.push(<FontAwesomeIcon icon={faStar} key={i} />);
+//       }
+//       return stars;
+//     };
+//       return(
+//           <div>
+//              {product && <p> {product.name}</p>}
+//             <li className={styles.bgCard}>
+//              <div className={styles.info}>
+//                     <figure>
+//                         <img src={image} alt="" />
+//                     </figure>
+//                        <div className={styles.content}>
+//                        <h3>{name}</h3>
+//                         <div className={styles.review}>
                             
-                            {renderStars()}
-                            <span>{price}</span>
-                        </div>
-                        <button>ORDER NOW</button>
-                       </div>
-                       </div>
-            </li>
-          </div>
-      )
-  }
+//                             {renderStars()}
+//                             <span>{price}</span>
+//                         </div>
+//                         <button  onClick={productHandel}>ORDER NOW</button>
+//                        </div>
+//                        </div>
+//             </li>
+           
+//           </div>
+//       )
+//   }
   
 
 export default Footer

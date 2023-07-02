@@ -25,7 +25,7 @@ const ingredient = [
     }
 ]
 
-const Main = ({count,onPlus,onMinus,onAddCart}) => {
+const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
    
    
     return (
