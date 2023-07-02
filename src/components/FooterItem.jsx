@@ -3,7 +3,7 @@ import { faStar} from '@fortawesome/free-solid-svg-icons'
 // import React, { useState } from 'react'
 import styles from "../layouts/Footer/footer.module.css"
  
- function FooterItem({name,image,price}){
+ function FooterItem({name,image,price,description,desImg,onClick}){
     // const [product,setProduct] = useState(null)
     
     // function productHandel (){
@@ -27,7 +27,7 @@ import styles from "../layouts/Footer/footer.module.css"
     };
       return(
           <div>
-             {/* {product && <p> {product.name}</p>} */}
+              
             <li className={styles.bgCard}>
              <div className={styles.info}>
                     <figure>
@@ -40,7 +40,7 @@ import styles from "../layouts/Footer/footer.module.css"
                             {renderStars()}
                             <span>{price}</span>
                         </div>
-                        <button  >ORDER NOW</button>
+                        <button onClick={()=>onClick({ name, image, price ,description,desImg})} >ORDER NOW</button>
                        </div>
                        </div>
             </li>

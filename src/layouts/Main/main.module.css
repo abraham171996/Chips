@@ -6,12 +6,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .cardLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    width: 50%;
     gap: 20px;
 }
 .cardLeftTop{
@@ -23,7 +24,7 @@ body{
     font-size: 48px;
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 50%;
+    width: 45%;
     line-height: 64px;
     position: relative;
    
@@ -37,8 +38,8 @@ body{
 .cardLeftTop img{
     width: 175px;
     height: 117px;
-    object-fit: cover;
-    left: 18%;
+    object-fit: contain;
+    left: 20%;
     position: absolute;
     
 
@@ -114,11 +115,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 50%;
 }
 
 .nachos{
-    width: 475px;
-    height: 615px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
 }
 .ingredientsBox{
     display: flex;

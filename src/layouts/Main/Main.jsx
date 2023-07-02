@@ -1,7 +1,7 @@
 
-import pepper1 from '../../assets/image/main/3-2-pepper-picture 1.png'
+
 import styles from "./main.module.css"
-import nachos from '../../assets/image/main/Group 24.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import pepper2 from '../../assets/image/main/3-2-pepper-picture 2.png'
@@ -30,14 +30,16 @@ const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
    
     return (
         <main>
-            <section id={styles.card}>
+            {
+                product&&
+                <section id={styles.card}>
                 <div className={styles.cardLeft}>
                     <div className={styles.cardLeftTop}>
-                        <h1>FLAMIN HOT NACHOS</h1>
-                        <img src={pepper1} alt="pepper-great" />
+                        <h1>{product.name}</h1>
+                        <img src={product.desImg} alt="" />
                     </div>
-                    <p >Presenting the Classic Nachos with a Flaming Hot Twist.
-                        It will Rock your taste buds with Chilli & Lime.
+                    <p >
+                        {product.description}
                     </p>
                     <div className={styles.addCart}>
                         <button className={styles.addBtn} onClick={onAddCart}>
@@ -55,7 +57,7 @@ const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
                 </div>
                 <div className={styles.cardRight}>
                     <figure>
-                        <img className={styles.nachos} src={nachos} alt="nachos" />
+                        <img className={styles.nachos} src={product.image} alt="nachos" />
                     </figure>
                     <div className={styles.ingredients}>
                         <ul className={styles.ingredientsBox}>
@@ -71,7 +73,8 @@ const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
                     </div>
                 </div>
             </section>
-
+            }
+                     
         </main>
     )
 }
