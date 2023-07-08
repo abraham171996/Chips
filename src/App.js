@@ -51,7 +51,9 @@ const App = () => {
   const [count, setCount] = useState(0);
   const [show, setShow] = useState(0);
   const [product, setProduct] = useState(chipsObj[0]);
-
+  const [addPrice,setAddPrice] = useState(0)
+  const [addName,setAddName] = useState("")
+  const [addPitcure,setAddPitcure] = useState(product.image)
  
   
   function productHandel(selectedProduct) {
@@ -63,6 +65,12 @@ const App = () => {
   function handleAddCart() {
     setShow(show + count);
     setCount(0);
+    if(count>=1){
+      setAddPrice(addPrice+(count*product.price))
+      setAddName(addName+product.name)
+      setAddPitcure(product.image)
+
+    }
   }
     
   function handlePlus() {
@@ -77,7 +85,14 @@ const App = () => {
 
   return (
     <>
-      <Header show={show} />
+      <Header
+        show={show}
+        product={product}
+        addPrice={addPrice}
+        addName = {addName}
+        addPitcure = {addPitcure}
+      />
+     
       <Main 
         count={count} 
         onPlus={handlePlus} 

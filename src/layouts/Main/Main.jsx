@@ -42,6 +42,7 @@ const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
                         {product.description}
                     </p>
                     <div className={styles.addCart}>
+                        <p className="price" style={{color:"#000000"}}>{product.price}$</p>
                         <button className={styles.addBtn} onClick={onAddCart}>
                             <div className={styles.icn}>
                                 <FontAwesomeIcon icon={faShoppingCart} />
@@ -62,7 +63,8 @@ const Main = ({count,onPlus,onMinus,onAddCart,product}) => {
                     <div className={styles.ingredients}>
                         <ul className={styles.ingredientsBox}>
 
-                            {ingredient.map((e)=>(                                <IngredientItem
+                            {ingredient.map((e)=>(
+                            <IngredientItem
                                     name={e.name}
                                     image={e.image}
                                     key={e.id}

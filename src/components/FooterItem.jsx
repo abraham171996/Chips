@@ -38,7 +38,7 @@ import styles from "../layouts/Footer/footer.module.css"
                         <div className={styles.review}>
                             
                             {renderStars()}
-                            <span>{price}</span>
+                            <span>{price}$</span>
                         </div>
                         <button onClick={()=>onClick({ name, image, price ,description,desImg})} >ORDER NOW</button>
                        </div>
