@@ -58,19 +58,23 @@ const App = () => {
   
   function productHandel(selectedProduct) {
     setProduct(selectedProduct);
-    setCount(0);
+    setCount(0)
+    setAddName("")
+    setAddPrice(0)
+    setAddPitcure(product.image)
+    setShow(0)
   }
   
 
   function handleAddCart() {
     setShow(show + count);
     setCount(0);
-    if(count>=1){
+    if(count>=1 ){
       setAddPrice(addPrice+(count*product.price))
-      setAddName(addName+product.name)
+      setAddName(product.name)
       setAddPitcure(product.image)
-
-    }
+      
+    }  
   }
     
   function handlePlus() {
